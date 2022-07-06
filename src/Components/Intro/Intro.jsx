@@ -43,7 +43,10 @@ function Intro() {
           txt2='Developer'/>
         </div>
         <div style={{top: '18rem', left: '1.75rem'}}>
-          <FloatingDiv image={thumbup} txt1='Best Design' txt2='Award'/>
+          <FloatingDiv 
+          image={thumbup} 
+          txt1='Best Design' 
+          txt2='Award'/>
         </div>
         {/* Blur Divs */}
         <div className='blur' 
