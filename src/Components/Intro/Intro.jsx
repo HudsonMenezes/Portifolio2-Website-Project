@@ -24,9 +24,9 @@ function Intro() {
         <button className="button i-button">Entre em Contato
         </button>
         <div className='i-icons'>
-          <a href='#'><img src={Github} alt="Github Link" /></a>
-          <a href='#'><img src={Linkedin} alt="Linkedin Link" /></a>
-          <a href='#'><img src={Instagram} alt="Instagram Link" /></a>
+          <a href='https://github.com/HudsonMenezes' target='_blank'><img src={Github} alt="Github Link" /></a>
+          <a href='https://www.linkedin.com/in/hudson-menezes/'  target='_blank'><img src={Linkedin} alt="Linkedin Link" /></a>
+          <a href='https://www.instagram.com/hudson.ads/' target='_blank'><img src={Instagram} alt="Instagram Link" /></a>
         </div>
 
 
