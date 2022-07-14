@@ -1,6 +1,7 @@
 import './App.css'
 import Contact from './Components/Contact/Contact'
 import Experience from './Components/Experience/Experience'
+import Footer from './Components/Footer/Footer'
 import Intro from './Components/Intro/Intro'
 import Navbar from './Components/Navbar/Navbar'
 import Portfolio from './Components/Portfolio/Portfolio'
@@ -17,6 +18,7 @@ function App() {
       <Works />
       <Portfolio />
       <Contact />
+      <Footer />
     </div>
   )
 }
