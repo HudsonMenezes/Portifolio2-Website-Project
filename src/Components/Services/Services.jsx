@@ -5,7 +5,7 @@ import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from '../Card/Card';
-import Resume from './HudsonMenezes-CV.pdf'
+import Resumee from './HudsonMenezes-CV.pdf'
 import {motion} from 'framer-motion'
 
 
@@ -29,7 +29,7 @@ function Services() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> 
           Eum minus alias quod dolore ipsam eligendi fugiat sunt quas.
         </span>
-        <a href={Resume} download>
+        <a href={Resumee} download>
 
         <button className='button s-button'>
           Baixar Currículo
