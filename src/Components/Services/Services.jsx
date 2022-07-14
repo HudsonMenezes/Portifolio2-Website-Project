@@ -6,12 +6,18 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from '../Card/Card';
 import Resume from './HudsonMenezes-CV.pdf'
+import {motion} from 'framer-motion'
 
 
 function Services() {
    // context
    const theme = useContext(themeContext);
    const darkMode = theme.state.darkMode;
+    // transition
+  const transition = {
+    duration: 1,
+    type: "spring",
+  };
 
   return (
     <div className="services">
@@ -37,29 +43,41 @@ function Services() {
       {/* Right Side */}
       <div className="cards">
         {/* First Card */}
-        <div style={{left: '14rem'}}>
+        <motion.div 
+        initial={{ left: "25rem" }}
+        whileInView={{ left: "14rem" }}
+        transition={transition}
+        style={{left: '14rem'}}>
           <Card 
             emoji = {HeartEmoji}
             heading = {'Design'}
             detail ={"Figma, Sketch, Photoshop, Adobe, Adobe xd"}
           />
-        </div>
+        </motion.div>
         {/* Second Card */}
-        <div style={{top: '12rem', left: '-4rem'}}>
+        <motion.div 
+        initial={{ left: "-11rem", top: "12rem" }}
+        whileInView={{ left: "-4rem" }}
+        transition={transition}
+        style={{top: '12rem', left: '-4rem'}}>
           <Card 
             emoji = {Glasses}
             heading = {'Desenvolvimento'}
             detail ={"Html, Css, JavaScript, React"}
           />
-        </div>
+        </motion.div>
         {/* Third Card */}
-        <div style={{top: '19rem', left: '12rem'}}>
+        <motion.div 
+        initial={{ top: "19rem", left: "25rem" }}
+        whileInView={{ left: "12rem" }}
+        transition={transition}
+        style={{top: '19rem', left: '12rem'}}>
           <Card 
             emoji = {Humble}
             heading = {'UI/UX'}
             detail ={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, magnam!'}
           /> 
-        </div>
+        </motion.div>
         <div className='blur s-blur2'
          ></div>
       </div>
