@@ -25,6 +25,9 @@
 
 @media screen and (max-width: 480px){
   .f-content{
-    transform: scale(.5);
+    transform: scale(0.6);
+  }
+  span{
+    font-size: 24px;
   }
 }

@@ -20,7 +20,7 @@ function Services() {
   };
 
   return (
-    <div className="services">
+    <div className="services" id='Services'>
       {/* Left Side */}
       <div className="awesome">
         <span style={{ color: darkMode ? "white" : "" }}>Meus incríveis</span>
@@ -63,7 +63,7 @@ function Services() {
           <Card 
             emoji = {Glasses}
             heading = {'Desenvolvimento'}
-            detail ={"Html, Css, JavaScript, React"}
+            detail ={"Html, Css, JavaScript, React, C, Python"}
           />
         </motion.div>
         {/* Third Card */}
